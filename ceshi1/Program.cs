@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CeShi
+namespace ceshi1
 {
     class Program
     {
@@ -26,12 +26,12 @@ namespace CeShi
                 Endpoint = new AmqpTcpEndpoint(uri)
 
             };
-            RabbitMQSendServer SDF = RabbitMQSendServer.GetSingnalInstance();
-            for (int i = 0; i <5; i++)
-            {
-                SDF.ServiceSendMessage(factory, "topicceshi", "ceshi.*", $"{i}你好啊");
+            while(true)
+            { 
+            RabbitMQReceiveServer server = RabbitMQReceiveServer.GetSingnalInstance();
+            server.MessageReceive(factory, "topicque", "topicceshi", "ceshi.*");
             }
-           
+            Console.ReadKey();
         }
     }
 }
