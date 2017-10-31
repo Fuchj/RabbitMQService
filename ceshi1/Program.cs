@@ -12,7 +12,7 @@ namespace ceshi1
     {
         static void Main(string[] args)
         {
-            var uri = new Uri("amqp://192.168.0.62");
+            var uri = new Uri("amqp://192.168.0.200");
             var factory = new ConnectionFactory
 
             {
@@ -22,16 +22,17 @@ namespace ceshi1
                 Password = "ceshi",
 
                 RequestedHeartbeat = 0,
-
+                VirtualHost = "myhost",
                 Endpoint = new AmqpTcpEndpoint(uri)
 
             };
-            while(true)
-            { 
-            RabbitMQReceiveServer server = RabbitMQReceiveServer.GetSingnalInstance();
-            server.MessageReceive(factory, "topicque", "topicceshi", "ceshi.*");
+            Console.WriteLine($"当前连接服务器：{uri}");
+            while (true)
+            {
+                RabbitMQReceiveServer server = RabbitMQReceiveServer.GetSingnalInstance();
+                server.MessageReceive(factory, "que1", "sss.a", "ceshi.*");//topicque
+                Console.ReadKey();
             }
-            Console.ReadKey();
         }
     }
 }

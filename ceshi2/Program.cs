@@ -26,10 +26,11 @@ namespace ceshi2
                 Endpoint = new AmqpTcpEndpoint(uri)
 
             };
-            while(true)
+            Console.WriteLine($"当前连接服务器：{uri}");
+            while (true)
             { 
             RabbitMQReceiveServer server = RabbitMQReceiveServer.GetSingnalInstance();
-            server.MessageReceive(factory, "topicque1", "topicceshi", "ceshi.*");
+            server.MessageReceive(factory, "que1", "sss.a", "ceshi.*");
             }
             Console.ReadKey();
         }
