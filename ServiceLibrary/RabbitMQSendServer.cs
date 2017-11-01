@@ -48,7 +48,6 @@ namespace ServiceLibrary
             using (var connection = myConnectionFactory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
-
                 {
                     //if(exchangeName!=null)
                     //{
@@ -86,6 +85,5 @@ namespace ServiceLibrary
             }
 
         }
-
     }
 }
