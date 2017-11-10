@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{9986C7A5-4525-41AC-B60F-78F071F4F54B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLibrary", "ServiceLibrary\ServiceLibrary.csproj", "{DDEC68B1-62F4-412B-8189-6A165DA1E302}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQServiceLibrary", "ServiceLibrary\RabbitMQServiceLibrary.csproj", "{DDEC68B1-62F4-412B-8189-6A165DA1E302}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeShi", "CeShi\CeShi.csproj", "{A62B7305-FADD-42B7-8B9E-D6603B1B3AD0}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{EDA4431A-7482-48F7-A91F-CE2DFD71E897}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQforWebSocket", "RabbitMQforWebSocket\RabbitMQforWebSocket.csproj", "{ECBEC14B-AD98-457B-829C-87F9034B1F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperWebSocketLibrary", "SuperWebSocketLibrary\SuperWebSocketLibrary.csproj", "{7951AF07-A1F6-4EA1-9921-7C6C048E4FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{6C39D351-1F69-4033-9B3B-C1A01EBC0A9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{ECBEC14B-AD98-457B-829C-87F9034B1F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECBEC14B-AD98-457B-829C-87F9034B1F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECBEC14B-AD98-457B-829C-87F9034B1F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7951AF07-A1F6-4EA1-9921-7C6C048E4FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7951AF07-A1F6-4EA1-9921-7C6C048E4FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7951AF07-A1F6-4EA1-9921-7C6C048E4FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7951AF07-A1F6-4EA1-9921-7C6C048E4FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C39D351-1F69-4033-9B3B-C1A01EBC0A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C39D351-1F69-4033-9B3B-C1A01EBC0A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C39D351-1F69-4033-9B3B-C1A01EBC0A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C39D351-1F69-4033-9B3B-C1A01EBC0A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

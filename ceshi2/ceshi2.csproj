@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServiceLibrary\ServiceLibrary.csproj">
+    <ProjectReference Include="..\ServiceLibrary\RabbitMQServiceLibrary.csproj">
       <Project>{ddec68b1-62f4-412b-8189-6a165da1e302}</Project>
-      <Name>ServiceLibrary</Name>
+      <Name>RabbitMQServiceLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
